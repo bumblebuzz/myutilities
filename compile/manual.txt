@@ -1,0 +1,39 @@
+DIRECTORY STRUCTURE
+-------------------------
+Root directory(can be renamed):contains subfolders needed and main source files
+
+includes: standard includes folder
+
+requirements: files required for source to work, may be omitted if files kept under the root directory
+
+compile.py: main script to automate compilation, make executable by using chmod. Must be kept under root directory.
+
+
+FLAGS:
+-----------------------------------------------------
+NOTE: -----------------------------------------------
+-----------------------------------------------------
+--src and --extrnreq take '_all_' key to denote
+all files in the directory
+
+The default compiler is g++ and default standart is
+c++17
+-----------------------------------------------------
+-----------------------------------------------------
+
+
+--src: specifies source files, defaults to where compile.py is
+--srcpath: path to source file if not under root directory
+--dst: name of executable
+--dstpath: place to compile the executable to
+--ignore: files to ignore, no need to specify the path but must be named
+--extrnpath: external files elsewhere to include for compilation, NOTE:
+ 	path must exist
+--extrnreq: external file names
+--usext: use only these extensions
+--compiler: compiler to use, must be set in environment variable or must
+ include full path
+--std: standard to use for compiler
+--run: run the program on compilation. The default is true, set to 'f' to disable.
+--info: if --info is followed by show argument then this help file is printed
+
